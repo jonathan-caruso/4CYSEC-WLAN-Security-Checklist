@@ -19,56 +19,88 @@
 			transform: scale(1.5);
 			margin-right: 10px;
 		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			margin-top: 10px;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		.submit-button-container {
+			text-align: center;
+			margin-top: 20px;
+		}
 	</style>
 </head>
 <body>
 	<h1>ITWorks WLAN Security Checklist</h1>
-	<table>
-		<tr>
-			<th>Security Measure</th>
-			<th>Description</th>
-			<th>Completed</th>
-		</tr>
-		<tr>
-			<td>Change Default SSID</td>
-			<td>Change the default SSID to something unique and not related to the organization or location.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Change Default Admin Credentials</td>
-			<td>Change the default administrator credentials for the wireless access points to strong, unique passwords.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Disable Unused Services</td>
-			<td>Disable any unused services and ports on the wireless access points to reduce the attack surface.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Enable Encryption</td>
-			<td>Enable WPA2 or WPA3 encryption to protect the wireless network from unauthorized access.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Limit Access</td>
-			<td>Limit access to the wireless network by using MAC filtering and strong authentication methods such as EAP-TLS or PEAP.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Regularly Update Firmware</td>
-			<td>Regularly update the firmware of the wireless access points to patch vulnerabilities and improve performance.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Monitor for Rogue Access Points</td>
-			<td>Monitor the wireless network for rogue access points and take immediate action if any are discovered.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-		<tr>
-			<td>Regularly Review Logs</td>
-			<td>Regularly review the logs of the wireless access points to detect any suspicious activity.</td>
-			<td><input type="checkbox"></td>
-		</tr>
-	</table>
+	<form action="" method="post">
+		<table>
+			<tr>
+				<th>Security Measure</th>
+				<th>Description</th>
+				<th>Completed</th>
+				<TH>Notes</th>
+			</tr>
+			<tr>
+				<td>Change Default SSID</td>
+				<td>Change the default SSID to something unique and not related to the organization or location.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Change Default Admin Credentials</td>
+				<td>Change the default administrator credentials for the wireless access points to strong, unique passwords.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Disable Unused Services</td>
+				<td>Disable any unused services and ports on the wireless access points to reduce the attack surface.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Enable Encryption</td>
+				<td>Enable WPA2 or WPA3 encryption to protect the wireless network from unauthorized access.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Limit Access</td>
+				<td>Limit access to the wireless network by using MAC filtering and strong authentication methods such as EAP-TLS or PEAP.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Regularly Update Firmware</td>
+				<td>Regularly update the firmware of the wireless access points to patch vulnerabilities and improve performance.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Monitor for Rogue Access Points</td>
+				<td>Monitor the wireless network for rogue access points and take immediate action if any are discovered.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<td>Regularly Review Logs</td>
+				<td>Regularly review the logs of the wireless access points to detect any suspicious activity.</td>
+				<td><input type="checkbox"></td>
+				<td><input type="text"></td>
+			</tr>
+		</table>
+		<div class="submit-button-container">
+			<input type="submit" value="Submit Checklist">
+		</div>
+	</form>
+	
 </body>
 </html>
