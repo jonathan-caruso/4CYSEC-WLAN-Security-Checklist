@@ -40,7 +40,8 @@
 </head>
 <body>
 	<h1>ITWorks WLAN Security Checklist</h1>
-	<table>
+	<form id="security-checklist-form">
+		<table>
 		<tr>
 			<th>Security Measure</th>
 			<th>Description</th>
@@ -96,8 +97,14 @@
 			<td><input type="text"></td>
 		</tr>
 	</table>
-	<div class="submit-button-container">
-		<input type="submit" value="Submit Checklist">
-	</div>	
+		<div class="submit-button-container">
+			<input type="button" value="Submit Checklist" onclick="resetForm()">
+		</div>
+	</form>
+	<script>
+		function resetForm() {
+			document.getElementById("security-checklist-form").reset();
+		}
+	</script>
 </body>
 </html>
